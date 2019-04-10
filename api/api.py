@@ -32,8 +32,9 @@ def check(guid):
     task = celery.AsyncResult(guid)
 
     if task.status == 'SUCCESS':
+        md5 = task.get() if task.get is not None else storage.get(guid)
         response['success'] = True
-        response['data'] = {'guid': guid, 'md5': task.get()}  # storage.get(guid)
+        response['data'] = {'guid': guid, 'md5': md5}
     elif task.status == 'FAILURE':
         response['error'] = str(task.result)
     elif task.status == 'PENDING':
