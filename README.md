@@ -3,7 +3,7 @@
 2. Зайти в окружение `source venv/bin/activate`
 3. Установить зависимости `pip3 install -r requirements.txt`
 4. Запустить celery `celery worker -A tasks.tasks --autoscale=10,2
-` (`-autoscale=m,n` m-максимальное количество воркеров, n-изначальное)
+` (`-autoscale=m,n` m-максимальное количество воркеров, n-минимальное)
 5. Запустить веб-сервис `python3 main.py`
 ### Задача
 Написать web-сервис для подсчёта MD5-суммы произвольного документа.
