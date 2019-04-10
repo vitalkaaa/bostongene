@@ -24,3 +24,4 @@ def my_background_task(self, file_url):
     storage.save(self.request.id, file_url, md5)
 
     time.sleep(0.5)
+    return md5

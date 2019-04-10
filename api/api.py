@@ -33,7 +33,7 @@ def check(guid):
 
     if task.status == 'SUCCESS':
         response['success'] = True
-        response['data'] = {'guid': guid, 'md5': storage.get(guid)}
+        response['data'] = {'guid': guid, 'md5': task.get()}  # storage.get(guid)
     elif task.status == 'FAILURE':
         response['error'] = str(task.result)
     elif task.status == 'PENDING':

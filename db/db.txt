@@ -1,0 +1,2 @@
+d5272a47-4b8d-4f20-8648-0898648352a5 https://www.python.org/static/img/python-logo@2x.png 6501c7a62fd9cdc3852ab6dc554d91c4
+716466d0-ef65-4989-9380-5699ec36eeba https://www.python.org/static/img/python-logo@2x.png 6501c7a62fd9cdc3852ab6dc554d91c4
